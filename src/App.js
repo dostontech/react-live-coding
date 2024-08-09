@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import ToggleSwitch from './challenge/ToggleSwitch';
+import Counter from './challenge/Counter';
+import FetchApi from './challenge/FetchApi';
 
 function App() {
   return (
@@ -7,17 +10,14 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>[20 Coding Chalange in REACT]</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <body>
+        <Counter/>
+        <ToggleSwitch />
+        <FetchApi/>
+      </body>
     </div>
   );
 }
